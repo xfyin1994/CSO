@@ -1,6 +1,4 @@
-# CSO
 # CSO: Constraint-guided Space Optimization for Active Scene Mapping
-
 
 ## BUILD
 
@@ -9,8 +7,6 @@ conda create -p ./venv python=3.6
 source activate ./venv
 sh ./build.sh && python -m gibson2.utils.assets_utils --download_assets
 ```
-
-
 
 ## DATASET
 
@@ -44,7 +40,6 @@ sh ./build.sh && python -m gibson2.utils.assets_utils --download_assets
   ```shell
   python -m gibson2.utils.assets_utils --download_assets
   ```
-
 
 
 ## USAGE
