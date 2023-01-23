@@ -47,7 +47,19 @@ sh ./build.sh && python -m gibson2.utils.assets_utils --download_assets
 + Train
 
 ```shell
-python main.py --global_lr 5e-4 --exp_name 'ma3_history' --critic_lr_coef 5e-2 --train_global 1 --dump_location train --scenes_file scenes/train.scenes
+python main.py \
+--critic_lr_coef 5e-2 \
+--num_robots 1 \
+--num_processes 4 \
+--train_global 1 \
+--dump_location "train" \
+--global_lr 5e-5 \
+--scenes_file "scenes/my_test/full_big_train.scenes" \
+--info_mode 2 \
+--info_type 1 \
+--action_masked 3 \
+--info_gain_map_length 60 \
+--exp_name 'exp_1'
 ```
 
 + Test (Example)
