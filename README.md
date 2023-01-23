@@ -56,14 +56,6 @@ python main.py --global_lr 5e-4 --exp_name 'ma3_history' --critic_lr_coef 5e-2 -
 python main.py --exp_name 'eval_coscan_mp3dhq0f' --scenes_file scenes/mp3dhq0-f.scenes --dump_location std --num_episodes 10 --load_global best.global
 ```
 
-+ Test via scripts
-
-```shell
-python eval.py --load best.global --dataset mp3d --method rl -n 5
-python eval.py --dataset mp3d --method coscan -n 5
-```
-
-
 + Visualization
 
 ```shell
