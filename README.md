@@ -65,15 +65,36 @@ python main.py \
 + Test (Example)
 
 ```shell
-python main.py --exp_name 'eval_coscan_mp3dhq0f' --scenes_file scenes/mp3dhq0-f.scenes --dump_location std --num_episodes 10 --load_global best.global
+python main.py \
+--num_robots 1 \
+--num_processes 1 \
+--dump_location "test" \
+--num_episodes 20 \
+--info_mode 2 \
+--scenes_file "scenes/my_test/full_big_test_new.scenes" \
+--info_type 1 \
+--exp_name 'exp_1' \
+--action_masked 3 \
+--info_gain_map_length 60 \
+--load_global "path_to_your_model/periodic_x.global"
 ```
 
 + Visualization
 
 ```shell
-python main.py --exp_name 'eval_coscan_mp3dhq0f' --scenes_file scenes/mp3dhq0-f.scenes --dump_location /mnt/disk1/vis --num_episodes 5 --load_global best.global --vis_type 2
-# dump at ./video/
-python scripts/map2d.py --dir /mnt/disk1/vis vis_hrl -ne 5 -ns 4
+python main.py \
+--num_robots 1 \
+--num_processes 1 \
+--dump_location "test_vis" \
+--info_mode 2 \
+--num_episodes 13 \
+--scenes_file "scenes/my_test/full_big_test_new.scenes" \
+--info_type 1 \
+--vis_type 3 \
+--exp_name 'exp_1' \
+--action_masked 3 \
+--info_gain_map_length 60 \
+--load_global "path_to_your_model/periodic_x.global"
 ```
 
 ## ACKNOWLEDGMENT
