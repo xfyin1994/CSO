@@ -3,7 +3,7 @@
 ## BUILD
 
 ```shell
-conda create -p ./venv python=3.6
+conda create -p ./venv python=3.7
 source activate ./venv
 sh ./build.sh && python -m gibson2.utils.assets_utils --download_assets
 ```
