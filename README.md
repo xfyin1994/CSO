@@ -62,7 +62,7 @@ python main.py \
 --exp_name 'exp_1'
 ```
 
-+ Test (Example)
++ Test
 
 ```shell
 python main.py \
